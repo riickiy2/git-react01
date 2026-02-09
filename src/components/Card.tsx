@@ -5,6 +5,11 @@ type CardProps = {
 }
 
 const Card = ({title, img}: CardProps) => {
+
+  function mostrarInfo() {
+    alert("Estamos trabalhando nisso ainda. Aguarde...");
+  }
+
   return (
     <div className="border w-full  p-4 rounded-mb border-[#00A2F7] flex flex-col">
       <div className="flex justify-center items-center flex-1"> {/*===Dimensões da Imagem dentro do card=== */}
@@ -14,7 +19,7 @@ const Card = ({title, img}: CardProps) => {
         {title}
       </p>
       <p className="text-[#00A2F7] text-sm mt-1" >9h</p>
-      <button className="bg-[#00A2F7] text-white w-full text-sm py-1 rounded-sm cursor-pointer mt-1">Inscreva-se</button>
+      <button className="bg-[#00A2F7] text-white w-full text-sm py-1 rounded-sm cursor-pointer mt-1" onClick={mostrarInfo}>Inscreva-se</button>
     </div>
   );
 };
